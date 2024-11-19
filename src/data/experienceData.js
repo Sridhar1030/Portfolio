@@ -2,10 +2,25 @@ export const experienceData = [
     {
         id: 1,
         company: 'Rigved Interior Decorator',
-        jobtitle: 'Intern',
+        jobtitle: 'Web Developer Intern',
         startYear: '2023',
         endYear: '2023'
     },
+    {
+        id: 1,
+        company: 'MathsInDepth',
+        jobtitle: 'Graphic Designer',
+        startYear: '2023',
+        endYear: '2023'
+    },
+    {
+        id: 1,
+        company: 'MathsInDepth',
+        jobtitle: 'Web Developer Intern',
+        startYear: '2023',
+        endYear: '2023'
+    },
+
     {
         id: 3,
         company: 'Vidyavardhini’s College of Engineering and Technology (VCET)',
