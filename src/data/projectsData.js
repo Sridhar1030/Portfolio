@@ -28,7 +28,16 @@ export const projectsData = [
 		demo: "http://www.pennytracker.tech",
 		image: two,
 	},
-	
+	{
+		id: 5,
+		projectName: "Hackthon Meals",
+		projectDesc:
+			"A web app to for the college hackthon to distribute meals without the use of coupons.",
+		tags: ["React", "MongoDB", "NodeJS", "Express"],
+		code: "https://github.com/Sridhar1030/QR_Hackathon",
+		demo: "https://qr-hackathon.vercel.app/",
+		image: five,
+	},
 	{
 		id: 3,
 		projectName: "Browser and Buy",
@@ -46,19 +55,9 @@ export const projectsData = [
 			"A web app to schedule events and manage participant schedules using a genetic algorithm for optimization and round-robin scheduling. Built with React, Django, and SQL.",
 		tags: ["React", "Django", "SQL", "Genetic Algorithm"],
 		code: "https://github.com/Sridhar1030/event-scheduler",
-		demo: "https://www.pennytracker.tech/events",
 		image: three,
 	},
-	{
-		id: 5,
-		projectName: "Hackthon Meals",
-		projectDesc:
-			"A web app to for the college hackthon to distribute meals without the use of coupons.",
-		tags: ["React", "MongoDB", "NodeJS", "Express"],
-		code: "https://github.com/Sridhar1030/QR_Hackathon",
-		demo: "https://qr-hackathon.vercel.app/",
-		image: five,
-	},
+	
 	{
 		id: 6,
 		projectName: "Translator_DiscordBot",

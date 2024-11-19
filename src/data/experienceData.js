@@ -23,7 +23,7 @@ export const experienceData = [
 
     {
         id: 3,
-        company: 'Vidyavardhini’s College of Engineering and Technology (VCET)',
+        company: 'Vidyavardhini’s College of Engineering and Technology',
         jobtitle: 'Technical Head - Hackathon Committee',
         startYear: '2023',
         endYear: 'Present'

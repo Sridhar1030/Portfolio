@@ -25,8 +25,8 @@
   border-radius: 50%;
   box-shadow: 0px 0px 30px rgba(255, 205, 5, 0.76);
   transition: opacity 0.3s;
-  
-  /* Half-and-half color overlay */
+
+  /* Default desktop view: half left grey, half right yellow */
   background: linear-gradient(
     to right, 
     #212121 50%, 
@@ -35,6 +35,16 @@
   clip-path: circle(50%);
 }
 
+/* Mobile view: top black, bottom yellow */
+@media (max-width: 425px) {
+  .landing--img {
+    background: linear-gradient(
+      to bottom, 
+      #212121 50%, 
+      #e3aa0e 50%
+    );
+  }
+}
 .landing--container-left {
   flex: 35%;
   height: 100%;
