@@ -49,16 +49,6 @@ export const projectsData = [
 		image: four,
 	},
 	{
-		id: 4,
-		projectName: "Event Scheduler",
-		projectDesc:
-			"A web app to schedule events and manage participant schedules using a genetic algorithm for optimization and round-robin scheduling. Built with React, Django, and SQL.",
-		tags: ["React", "Django", "SQL", "Genetic Algorithm"],
-		code: "https://github.com/Sridhar1030/event-scheduler",
-		image: three,
-	},
-	
-	{
 		id: 6,
 		projectName: "Translator_DiscordBot",
 		projectDesc:
@@ -68,5 +58,17 @@ export const projectsData = [
 		// demo: "",
 		image: six,
 	},
+	{
+		id: 4,
+		projectName: "Event Scheduler",
+		projectDesc:
+			"A web app to schedule events and manage participant schedules using a genetic algorithm for optimization and round-robin scheduling. Built with React, Django, and SQL.",
+		tags: ["React", "Django", "SQL", "Genetic Algorithm"],
+		code: "https://github.com/Sridhar1030/event-scheduler",
+		// demo: "https://event-scheduler-genetic-algo.vercel.app/",
+		image: three,
+	},
+	
+	
 
 ];
