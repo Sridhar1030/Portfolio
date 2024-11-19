@@ -1,5 +1,12 @@
 export const experienceData = [
     {
+        id: 1,
+        company: 'Rigved Interior Decorator',
+        jobtitle: 'Intern',
+        startYear: '2023',
+        endYear: '2023'
+    },
+    {
         id: 3,
         company: 'Vidyavardhini’s College of Engineering and Technology (VCET)',
         jobtitle: 'Technical Head - Hackathon Committee',
@@ -14,10 +21,11 @@ export const experienceData = [
         endYear: 'Present'
     },
     {
-        id: 1,
-        company: 'Rigved Interior Decorator',
-        jobtitle: 'Intern',
+        id: 3,
+        company: 'Training and Placement Cell, VCET',
+        jobtitle: 'Technical Head',
         startYear: '2023',
-        endYear: '2023'
-    }
+        endYear: 'Present'
+    },
+    
 ]

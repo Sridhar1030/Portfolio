@@ -16,6 +16,8 @@ import {
     FaBlogger,
 } from 'react-icons/fa';
 
+import { TbBrandLeetcode } from "react-icons/tb";
+
 function Landing() {
     const { theme, drawerOpen } = useContext(ThemeContext);
 
@@ -101,6 +103,21 @@ function Landing() {
                                 />
                             </a>
                         )}
+                        
+                        {socialsData.leeetcode && (
+                            <a
+                                href={socialsData.leeetcode}
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <TbBrandLeetcode
+                                    className='landing--social'
+                                    style={{ color: theme.secondary }}
+                                    aria-label='leetcode'
+                                />
+                            </a>
+                        )}
+
                         {/* {socialsData.twitter && (
                             <a
                                 href={socialsData.twitter}

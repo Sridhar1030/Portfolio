@@ -17,6 +17,9 @@ import {
     FaGitlab,
     FaMediumM,
 } from 'react-icons/fa';
+
+import { TbBrandLeetcode } from "react-icons/tb";
+
 import { AiOutlineSend, AiOutlineCheckCircle } from 'react-icons/ai';
 import { FiPhone, FiAtSign } from 'react-icons/fi';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
@@ -303,14 +306,7 @@ function Contacts() {
                                 {contactsData.phone}
                             </p>
                         </a>
-                        <div className='personal-details'>
-                            <div className={classes.detailsIcon}>
-                                <HiOutlineLocationMarker />
-                            </div>
-                            <p style={{ color: theme.tertiary }}>
-                                {contactsData.address}
-                            </p>
-                        </div>
+                        
 
                         <div className='socialmedia-icons'>
                             {/* {socialsData.twitter && (
@@ -341,6 +337,16 @@ function Contacts() {
                                     className={classes.socialIcon}
                                 >
                                     <FaLinkedinIn aria-label='LinkedIn' />
+                                </a>
+                            )}
+                            {socialsData.leeetcode && (
+                                <a
+                                    href={socialsData.leeetcode}
+                                    target='_blank'
+                                    rel='noreferrer'
+                                    className={classes.socialIcon}
+                                >
+                                    <TbBrandLeetcode aria-label='leetcode' />
                                 </a>
                             )}
                             {/* {socialsData.instagram && (

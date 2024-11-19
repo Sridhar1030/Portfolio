@@ -58,7 +58,7 @@ import strapi from '../assets/svg/skills/strapi.svg'
 import tensorflow from '../assets/svg/skills/tensorflow.svg'
 import webix from '../assets/svg/skills/webix.svg'
 import wordpress from '../assets/svg/skills/wordpress.svg'
-
+import nodejs from '../assets/svg/skills/nodejs.svg'
 import azure from '../assets/svg/skills/azure.svg'
 import blender from '../assets/svg/skills/blender.svg'
 import fastify from '../assets/svg/skills/fastify.svg'
@@ -72,7 +72,8 @@ import picsart from '../assets/svg/skills/picsart.svg'
 import sketch from '../assets/svg/skills/sketch.svg'
 import unity from '../assets/svg/skills/unity.svg'
 import wolframalpha from '../assets/svg/skills/wolframalpha.svg'
-
+import redis from '../assets/svg/skills/redis.svg'
+import ubuntu from '../assets/svg/skills/ubuntu.svg'
 import canva from '../assets/svg/skills/canva.svg'
 
 
@@ -81,8 +82,14 @@ export const skillsImage = (skill) => {
     switch (skillID) {
         case 'gcp':
             return gcp;
+        case 'ubuntu':
+            return ubuntu;
+        case 'redis':
+            return redis;
         case 'html':
             return html;
+        case 'node.js':
+            return nodejs;
         case 'photoshop':
             return photoshop;
         case 'docker':
@@ -95,6 +102,8 @@ export const skillsImage = (skill) => {
             return afterEffects;
         case 'css':
             return css;
+        case 'Node.js':
+            return nodejs;
         case 'angular':
             return angular;
         case 'javascript':
@@ -228,6 +237,6 @@ export const skillsImage = (skill) => {
         case 'canva':
             return canva;
         default:
-            break;
+            return null;
     }
 }
