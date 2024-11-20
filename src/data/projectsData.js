@@ -52,7 +52,7 @@ export const projectsData = [
 		id: 6,
 		projectName: "Translator_DiscordBot",
 		projectDesc:
-			"A web app to for the college hackthon to distribute meals without the use of coupons.",
+			"A discord bot which can be used in channels for translating messages to different languages.",
 		tags: ["React","Discord.js", "MongoDB", "NodeJS", "Express"],
 		code: "https://github.com/Sridhar1030/Translator_DiscordBot",
 		// demo: "",
