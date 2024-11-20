@@ -18,6 +18,6 @@ export const educationData = [
         institution: 'National English School',
         course: 'ICSE',
         startYear: '2008',
-        endYear: '2019'
+        endYear: '2020'
     },
 ]
