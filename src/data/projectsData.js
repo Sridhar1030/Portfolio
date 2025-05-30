@@ -26,7 +26,7 @@ export const projectsData = [
 		tags: ["React", "Node.js", "Firebase", "Redis"],
 		code: "https://github.com/Sridhar1030/FinanceTracker/",
 		demo: "http://www.pennytracker.tech",
-		image: two,
+		image: "https://pavanrasal.me/pennytrackerImage.png",
 	},
 	{
 		id: 5,
@@ -46,7 +46,7 @@ export const projectsData = [
 		tags: ["React", "Node.js", "MongoDB"],
 		code: "https://github.com/Sridhar1030/browser-and-buy",
 		demo: "https://browsenbuy.vercel.app/",
-		image: four,
+		image: "https://pavanrasal.me/bAndB.png",
 	},
 	{
 		id: 6,

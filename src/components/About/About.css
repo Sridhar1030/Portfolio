@@ -1,6 +1,8 @@
 .about {
     min-height: 100vh;
     position: relative;
+    color: black;
+    background: transparent !important;
 }
 
 .about .line-styling{
@@ -100,9 +102,7 @@
     .about-description{
         flex: 0.6;
         box-sizing: border-box;
-        /* padding: 5% 10%; */
         padding: 20px;
-
     }
 
     .about-description > h2 {

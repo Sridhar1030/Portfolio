@@ -9,13 +9,16 @@ import ScrollToTop from './utils/ScrollToTop'
 import './App.css'
 
 function App() {
-
   const { theme } = useContext(ThemeContext);
-
-
 
   return (
     <div className="app">
+      <div className="stars"></div>
+      <div className="shooting-star"></div>
+      <div className="shooting-star"></div>
+      <div className="shooting-star"></div>
+      <div className="shooting-star"></div>
+      
       <Router>
         <ScrollToTop/>
         <Switch>

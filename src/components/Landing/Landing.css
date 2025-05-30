@@ -29,8 +29,8 @@
   /* Default desktop view: half left grey, half right yellow */
   background: linear-gradient(
     to right, 
-    #212121 50%, 
-    #e3aa0e 50%
+    #0F172A 50%, 
+    #494a8c 50%
   );
   clip-path: circle(50%);
 }
@@ -74,7 +74,7 @@
 .landing--container-right {
   flex: 65%;
   height: 100%;
-  background-color: #eaeaea;
+  /* background-color: transparent; */
   display: flex;
   flex-direction: column;
   align-items: flex-end;

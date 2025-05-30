@@ -17,7 +17,177 @@
 
 * {
 	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100vh;
+	width: 100%;
+	position: relative;
+}
+
+body {
+	background: linear-gradient(to bottom, #0F172A, #0F172A 70%, #0F172A);
+	overflow-x: hidden;
+}
+
+.app {
+	position: relative;
+	min-height: 100vh;
+	width: 100%;
+	z-index: 1;
+}
+
+.stars {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	pointer-events: none;
+}
+
+.stars::before {
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	background: white;
+	box-shadow: 
+		2vw 5vh 2px white, 10vw 8vh 2px white, 15vw 15vh 1px white,
+		22vw 22vh 1px white, 28vw 12vh 2px white, 32vw 32vh 1px white,
+		38vw 18vh 2px white, 42vw 35vh 1px white, 48vw 25vh 2px white,
+		53vw 42vh 1px white, 58vw 15vh 2px white, 63vw 38vh 1px white,
+		68vw 28vh 2px white, 73vw 45vh 1px white, 78vw 32vh 2px white,
+		83vw 48vh 1px white, 88vw 20vh 2px white, 93vw 52vh 1px white,
+		98vw 35vh 2px white, 5vw 60vh 1px white, 12vw 65vh 2px white,
+		18vw 72vh 1px white, 25vw 78vh 1px white, 30vw 85vh 2px white,
+		35vw 68vh 2px white, 40vw 82vh 1px white, 45vw 92vh 2px white,
+		50vw 75vh 1px white, 55vw 88vh 1px white, 60vw 95vh 2px white,
+		65vw 72vh 2px white, 70vw 85vh 1px white, 75vw 78vh 2px white,
+		80vw 92vh 1px white, 85vw 82vh 2px white, 90vw 88vh 1px white,
+		95vw 75vh 2px white,
+		/* Additional stars */
+		7vw 12vh 1px white, 13vw 28vh 2px white, 19vw 42vh 1px white,
+		24vw 55vh 2px white, 31vw 68vh 1px white, 37vw 82vh 2px white,
+		43vw 15vh 1px white, 49vw 32vh 2px white, 56vw 48vh 1px white,
+		62vw 62vh 2px white, 69vw 78vh 1px white, 76vw 92vh 2px white,
+		82vw 25vh 1px white, 89vw 42vh 2px white, 96vw 58vh 1px white,
+		3vw 72vh 2px white, 9vw 88vh 1px white, 16vw 15vh 1px white,
+		23vw 32vh 2px white, 29vw 48vh 1px white, 36vw 62vh 1px white,
+		42vw 78vh 2px white, 48vw 92vh 1px white, 55vw 25vh 1px white,
+		61vw 42vh 2px white, 68vw 58vh 1px white, 74vw 72vh 1px white,
+		81vw 88vh 2px white, 87vw 15vh 1px white, 94vw 32vh 2px white;
+	animation: twinkle 8s infinite linear;
+}
+
+.shooting-star {
+	position: fixed;
+	width: 100px;
+	height: 2px;
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.8), transparent);
+	animation: shoot 3s infinite ease-in;
+	z-index: 0;
+	pointer-events: none;
+}
+
+.shooting-star:nth-child(1) {
+	top: 20%;
+	left: -100px;
+	animation-delay: 0s;
+}
+
+.shooting-star:nth-child(2) {
+	top: 35%;
+	left: -100px;
+	animation-delay: 1s;
+}
+
+.shooting-star:nth-child(3) {
+	top: 50%;
+	left: -100px;
+	animation-delay: 2s;
+}
+
+.shooting-star:nth-child(4) {
+	top: 65%;
+	left: -100px;
+	animation-delay: 1.5s;
+}
+
+.shooting-star:nth-child(5) {
+	top: 80%;
+	left: -100px;
+	animation-delay: 2.5s;
+}
+
+.shooting-star:nth-child(6) {
+	top: 15%;
+	left: -100px;
+	animation-delay: 0.5s;
+}
+
+.shooting-star:nth-child(7) {
+	top: 30%;
+	left: -100px;
+	animation-delay: 1.8s;
+}
+
+.shooting-star:nth-child(8) {
+	top: 45%;
+	left: -100px;
+	animation-delay: 3s;
+}
+
+@keyframes twinkle {
+	0%,
+	100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.6;
+	}
+}
+
+@keyframes shoot {
+	0% {
+		transform: translateX(0) translateY(0) rotate(25deg);
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(120vw) translateY(50vh) rotate(25deg);
+		opacity: 0;
+	}
+}
+
+/* Additional twinkling stars with different animation timing */
+.stars::after {
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	background: white;
+	box-shadow: 
+		8vw 12vh 2px white, 16vw 18vh 1px white, 24vw 25vh 2px white,
+		33vw 15vh 1px white, 41vw 28vh 2px white, 49vw 35vh 1px white,
+		57vw 22vh 2px white, 65vw 42vh 1px white, 73vw 28vh 2px white,
+		81vw 48vh 1px white, 89vw 32vh 2px white, 97vw 45vh 1px white,
+		3vw 68vh 2px white, 11vw 75vh 1px white, 19vw 82vh 2px white,
+		27vw 88vh 1px white, 35vw 72vh 2px white, 43vw 85vh 1px white,
+		51vw 92vh 2px white, 59vw 78vh 1px white,
+		/* Additional stars */
+		6vw 22vh 1px white, 14vw 38vh 2px white, 22vw 52vh 1px white,
+		30vw 68vh 2px white, 38vw 82vh 1px white, 46vw 15vh 1px white,
+		54vw 32vh 2px white, 62vw 48vh 1px white, 70vw 62vh 1px white,
+		78vw 78vh 2px white, 86vw 92vh 1px white, 94vw 25vh 1px white,
+		2vw 42vh 2px white, 10vw 58vh 1px white, 18vw 72vh 2px white,
+		26vw 88vh 1px white, 34vw 15vh 2px white, 42vw 32vh 1px white,
+		50vw 48vh 2px white, 58vw 62vh 1px white, 66vw 78vh 2px white,
+		74vw 92vh 1px white, 82vw 25vh 1px white, 90vw 42vh 2px white,
+		98vw 58vh 1px white, 4vw 72vh 2px white, 12vw 88vh 1px white;
+	animation: twinkle 6s infinite linear reverse;
 }
 
 a {
@@ -25,7 +195,6 @@ a {
 }
 
 /* scrollBar */
-
 ::-webkit-scrollbar {
 	width: 10px;
 	height: 10px;
