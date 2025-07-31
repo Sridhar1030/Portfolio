@@ -10,16 +10,6 @@ import eight from "../assets/svg/projects/eight.svg";
 export const projectsData = [
 	{
 		id: 1,
-		projectName: "Image Gallery App with AWS Rekognition",
-		projectDesc:
-			"This project allows users to upload images for celebrity recognition using AWS Rekognition. It features a dynamic gallery with real-time recognition results and is built using AWS services and React.",
-		tags: ["AWS Rekognition", "React", "Node.js", "Express"],
-		code: "https://github.com/Sridhar1030/image-gallery-app",
-		demo: "http://serverless-photo-website.s3-website.ap-south-1.amazonaws.com/",
-		image: one,
-	},
-	{
-		id: 2,
 		projectName: "FinanceTracker",
 		projectDesc:
 			"A finance tracker app that scrapes users' messages about daily spending and automatically uploads the data to Firebase. It uses Redis for caching and is hosted on an EC2 instance.",
@@ -27,6 +17,37 @@ export const projectsData = [
 		code: "https://github.com/Sridhar1030/FinanceTracker/",
 		demo: "http://www.pennytracker.tech",
 		image: "https://pavanrasal.me/pennytrackerImage.png",
+	},
+	{
+		id:2,
+		projectName: "Satyadarshi",
+		projectDesc:
+			"This multilingual legal assistant app empowers low-income users to navigate issues like evictions and wage theft through guided support, AI-driven legal document generation, and voice-based consultations. It features OCR-enabled document uploads, chatbot assistance, real-time legal updates, and lawyer discovery via Google Maps, with secure payments for premium services.",
+		tags: ["React", "Node.js", "MongoDB", "GoogleMaps","Elevenlabs"],
+		code: "https://github.com/Sridhar1030/pleaseGod",
+		demo: "https://satyadarshi.vercel.app/",
+		image: "https://res.cloudinary.com/sridhar1/image/upload/v1753953230/f4009489-2d0e-41c7-a3b3-c473c0d86754.png",
+	},
+	{
+		id: 3,
+		projectName: "AgroLynk",
+		projectDesc:
+			"AgroLynk is a platform that connects farmers with buyers, providing a seamless and efficient way to buy and sell agricultural products. It features a dynamic gallery with real-time recognition results and is built using AWS services and React.",
+		tags: [ "React", "Node.js", "Express","AWS" , "Google Cloud"],
+		code: "https://github.com/Sridhar1030/Agro-Lynk",
+		demo: "https://agro-lynk.vercel.app",
+		image: "https://res.cloudinary.com/sridhar1/image/upload/v1753954355/5bc10442-fd61-42e7-8b79-78fe94525f0e.png",
+	},
+	
+	{
+		id: 3,
+		projectName: "Browser and Buy",
+		projectDesc:
+			"A marketplace for buying and selling second-hand engineering items, built with React, Node, and MongoDB. Users can list items and interact with other buyers and sellers.",
+		tags: ["React", "Node.js", "MongoDB"],
+		code: "https://github.com/Sridhar1030/browser-and-buy",
+		demo: "https://browsenbuy.vercel.app/",
+		image: "https://pavanrasal.me/bAndB.png",
 	},
 	{
 		id: 5,
@@ -38,16 +59,7 @@ export const projectsData = [
 		demo: "https://qr-hackathon.vercel.app/",
 		image: five,
 	},
-	{
-		id: 3,
-		projectName: "Browser and Buy",
-		projectDesc:
-			"A marketplace for buying and selling second-hand engineering items, built with React, Node, and MongoDB. Users can list items and interact with other buyers and sellers.",
-		tags: ["React", "Node.js", "MongoDB"],
-		code: "https://github.com/Sridhar1030/browser-and-buy",
-		demo: "https://browsenbuy.vercel.app/",
-		image: "https://pavanrasal.me/bAndB.png",
-	},
+	
 	{
 		id: 6,
 		projectName: "Translator_DiscordBot",
