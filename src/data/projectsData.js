@@ -41,7 +41,7 @@ export const projectsData = [
 	
 	{
 		id: 3,
-		projectName: "Browser and Buy",
+		projectName: "Browse and Buy",
 		projectDesc:
 			"A marketplace for buying and selling second-hand engineering items, built with React, Node, and MongoDB. Users can list items and interact with other buyers and sellers.",
 		tags: ["React", "Node.js", "MongoDB"],
